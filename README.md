@@ -125,3 +125,35 @@ uv sync --upgrade
 # Update a specific package
 uv add "package-name@latest"
 ```
+
+## GitHub Actions
+
+This project includes automated CI/CD workflows:
+
+### Continuous Integration (`ci.yml`)
+- Runs on every push and pull request
+- Tests MkDocs build process
+- Validates Python syntax
+- Ensures dependencies are properly installed
+
+### Build and Deploy (`build-and-deploy.yml`)
+- Automatically builds documentation on main branch pushes
+- Deploys to GitHub Pages
+- Includes both production deployment and PR testing
+
+### Setup GitHub Pages
+
+To enable automatic deployment:
+
+1. Go to your repository Settings
+2. Navigate to Pages section
+3. Set Source to "GitHub Actions"
+4. The workflow will automatically deploy on every push to main
+
+## Benefits of Using UV
+
+- **Speed**: 10-100x faster than pip
+- **Reliability**: Better dependency resolution
+- **Reproducibility**: Lock file ensures consistent installs
+- **Modern**: Built with Rust, follows modern Python packaging standards
+- **Compatibility**: Works with existing pip/requirements.txt workflows
