@@ -28,7 +28,7 @@ jobs:
       run: |
         uv sync --frozen
 
-    # - name: Lint with UV
+    # - name: Lint with UV 
     #   run: |
     #     uv run python -m py_compile pyproject.toml
     #     uv run python -c "import ast; ast.parse(open('main.py').read())" || echo "main.py syntax check"
