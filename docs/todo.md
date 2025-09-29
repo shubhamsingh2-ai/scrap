@@ -21,3 +21,9 @@ description: Daily todo list
 - Use Docker to bundle frontend and backend
 - Stress test VC server | Should hande 500 concurrent users
 
+## 29 Sep 2025
+
+- Setup docker for frontend and backend
+- Used docker compose for for connecting container via network.
+- Working on Volume mounting for data import while starting db container. 
+- Going through k8s documentation and tutorial as i have not used it before.
